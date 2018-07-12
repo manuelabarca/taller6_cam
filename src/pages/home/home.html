@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+      <button ion-button block (click)="getPicture()">Tomar una foto</button>
+
+      <button ion-button block (click)="getPhoto()">Seleccionar una foto</button>
+  </ion-item>
+<img [src]="image" *ngIf="image">
+
+</ion-content>
